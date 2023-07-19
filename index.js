@@ -15,4 +15,4 @@ app.listen(PORT, () => {
 });
 
 app.use("/", galadmin(productionConfig));
-app.use("/staging", galadmin(stagingConfig));
+// app.use("/staging", galadmin(stagingConfig));
