@@ -13,8 +13,11 @@ app.listen(PORT, () => {
   console.log(`Backoffice is running http://localhost:${PORT}`);
 });
 
-app.use("/", galadmin(productionConfig));
+// app.use("/", galadmin(productionConfig));
 app.use("/staging", galadmin(stagingConfig));
 
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
+});
 // Export the Express API
 module.exports = app;
