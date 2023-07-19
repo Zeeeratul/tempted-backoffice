@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const getConfig = require("./config");
-const galadmin = require("@galadrim/galadmin").default;
+// const galadmin = require("@galadrim/galadmin").default;
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -14,7 +14,7 @@ app.listen(PORT, () => {
 });
 
 // app.use("/", galadmin(productionConfig));
-app.use("/staging", galadmin(stagingConfig));
+// app.use("/staging", galadmin(stagingConfig));
 
 app.get("/", (req, res) => {
   res.send("Express on Vercel");
