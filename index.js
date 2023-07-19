@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const getConfig = require("./config");
-const galadmin = require("@galadrim/galadmin").default;
+const galadmin = require("@galadrim/galadmin");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -12,6 +12,8 @@ const stagingConfig = getConfig("staging");
 app.listen(PORT, () => {
   console.log(`Backoffice is running http://localhost:${PORT}`);
 });
+
+console.log(galadmin);
 
 // app.use("/", galadmin(productionConfig));
 // app.use("/staging", galadmin(stagingConfig));
