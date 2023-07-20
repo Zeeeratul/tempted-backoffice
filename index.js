@@ -7,7 +7,7 @@ const galadmin = require("@galadrim/galadmin").default;
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-console.log(process.env.PASSWORD);
+console.log({ envPassword: process.env.PASSWORD });
 
 const productionConfig = getConfig("production");
 const stagingConfig = getConfig("staging");
