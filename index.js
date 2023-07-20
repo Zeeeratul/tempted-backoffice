@@ -4,7 +4,7 @@ const express = require("express");
 // const galadmin = require("@galadrim/galadmin");
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5001;
 
 // const productionConfig = getConfig("production");
 // const stagingConfig = getConfig("staging");
