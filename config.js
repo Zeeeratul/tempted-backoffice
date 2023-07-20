@@ -19,7 +19,7 @@ function getConfig(env) {
     views: [
       {
         type: "table",
-        label: "Auth",
+        label: "Authe",
         tableName: "Auth",
         columns: [
           {
