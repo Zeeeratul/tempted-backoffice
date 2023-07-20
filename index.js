@@ -13,7 +13,5 @@ app.listen(PORT, () => {
   console.log(`Backoffice is running http://localhost:${PORT}`);
 });
 
-console.log(productionConfig);
-
 app.use("/", galadmin(productionConfig));
 app.use("/staging", galadmin(stagingConfig));

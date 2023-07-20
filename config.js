@@ -9,7 +9,7 @@ function getConfig(env) {
     },
     mysql: {
       host: process.env.MYSQL_HOST,
-      user: process.env.MYSQL_USER,
+      user: process.env.MYSQL_USERNAME,
       password: process.env.MYSQL_PASSWORD,
       database:
         env === "staging"
