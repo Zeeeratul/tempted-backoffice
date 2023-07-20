@@ -6,13 +6,11 @@ const galadmin = require("@galadrim/galadmin").default;
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-console.log({ envPassword: process.env.PASSWORD });
-
 const productionConfig = getConfig("production");
 const stagingConfig = getConfig("staging");
 
 app.listen(PORT, () => {
-  console.log(`Backoffice is running http://localhost:${PORT}`);
+  console.log(`Backoffice is running on port: ${PORT}`);
 });
 
 app.use("/", galadmin(productionConfig));
