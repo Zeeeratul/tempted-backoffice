@@ -13,5 +13,5 @@ app.listen(PORT, () => {
   console.log(`Backoffice is running on port: ${PORT}`);
 });
 
-app.use("/", galadmin(productionConfig));
+app.use("/production", galadmin(productionConfig));
 app.use("/staging", galadmin(stagingConfig));
