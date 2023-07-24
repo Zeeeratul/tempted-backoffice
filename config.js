@@ -163,6 +163,80 @@ function getConfig(env) {
           },
         ],
       },
+      {
+        type: "table",
+        label: "Mission",
+        tableName: "Mission",
+        columns: [
+          {
+            label: "Id",
+            name: "id",
+          },
+          {
+            label: "StartedAt",
+            name: "startedAt",
+          },
+          {
+            label: "DoneAt",
+            name: "doneAt",
+          },
+          {
+            label: "Price",
+            name: "price",
+          },
+          {
+            label: "Currency",
+            name: "currency",
+          },
+          {
+            label: "Status",
+            name: "status",
+          },
+          {
+            label: "Stripe PaymentIntentId",
+            name: "paymentIntentId",
+          },
+          {
+            label: "ID Client",
+            name: "userProfileId",
+          },
+          {
+            label: "ID Prestataire",
+            name: "providerProfileId",
+          },
+        ],
+      },
+      {
+        type: "table",
+        label: "Message",
+        tableName: "Message",
+        columns: [
+          {
+            label: "Id",
+            name: "id",
+          },
+          {
+            label: "createdAt",
+            name: "createdAt",
+          },
+          {
+            label: "content",
+            name: "content",
+          },
+          {
+            label: "type",
+            name: "type",
+          },
+          {
+            label: "Send by (User or Provider)",
+            name: "userType",
+          },
+          {
+            label: "Id Mission",
+            name: "missionId",
+          },
+        ],
+      },
     ],
   };
 }
