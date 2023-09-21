@@ -69,6 +69,10 @@ function getConfig(env) {
             name: "id",
           },
           {
+            label: "createdAt",
+            name: "createdAt",
+          },
+          {
             label: "Firstname",
             name: "firstname",
           },
